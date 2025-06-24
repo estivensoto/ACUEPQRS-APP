@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  color: white;
+}
+
+.contenedor-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 40px;
+}
+
+.texto-bienvenida {
+  flex: 1;
+  max-width: 50%;
+  padding: 40px;
+}
+
+.titulo1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.titulo1 span {
+  color: #00ffff;
+}
+
+.formulario-login {
+  flex: 1;
+  max-width: 400px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.inicio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inicio input {
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d9d9d9;
+  color: black;
+}
+
+.inicio button {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2b2e5c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inicio button:hover {
+  background-color: #1f2244;
+}
+
+p {
+  color: rgb(252, 252, 252);
+  margin-top: 10px;
+}
+
+.footer-links {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

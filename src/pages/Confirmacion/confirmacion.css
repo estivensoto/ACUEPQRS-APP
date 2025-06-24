@@ -1,0 +1,30 @@
+.confirmacion-container {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom, #2b527f, #b0c4de);
+  height: 100vh;
+  color: white;
+}
+
+.mensaje {
+  background-color: #1d4e89;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.boton-regresar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00aaff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.boton-regresar:hover {
+  background-color: #0077aa;
+}

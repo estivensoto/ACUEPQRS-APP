@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #000d1a;
+  color: white;
+}
+
+
+.producto-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.menu-lateral {
+  width: 220px;
+  background: linear-gradient(to bottom, #0d2b4e, #06101f);
+  padding: 20px 10px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 100vh;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-lateral h2 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-lateral li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-lateral img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.menu-lateral a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s, color 0.3s;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu-lateral a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #00bfff;
+}
+/* Contenido principal */
+.contenido-principal {
+  margin-left: 220px; /* Para que no se superponga con el menú */
+  padding: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: calc(100% - 220px);
+  background-size: cover;
+  position: relative;
+}
+
+
+.logo-acue {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.logo-acue img {
+  width: 100px;
+  height: auto;
+}
