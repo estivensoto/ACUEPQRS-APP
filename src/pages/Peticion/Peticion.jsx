@@ -29,7 +29,7 @@ const Peticion = () => {
     return (
         <div>
             <nav style={{ textAlign: 'center', margin: '20px' }}>
-                <Link to="/">Inicio</Link> |{' '}
+                <Link className='iten' to="/">🏚 Inicio</Link> {' '}
             </nav>
             <div className="peticion-container">
                 <div className='titulo'><h1>PETICIONES</h1></div>
