@@ -1,30 +1,62 @@
 .confirmacion-container {
-  text-align: center;
+  position: relative;
+  min-height: 100vh;
   padding: 50px;
-  background: linear-gradient(to bottom, #2b527f, #b0c4de);
-  height: 100vh;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #e0f7ff; /* Blanco azulado */
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .mensaje {
-  background-color: #1d4e89;
+  background-color: rgba(17, 67, 107, 0.95); /* Azul más profundo */
   padding: 30px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(207, 207, 207, 0.3);
+  color: #ffffff; /* Texto blanco */
 }
 
 .boton-regresar {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #00aaff;
+  background-color: #00bfff; /* Azul claro */
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: white;
   cursor: pointer;
   font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .boton-regresar:hover {
-  background-color: #0077aa;
+  background-color: #009acd; /* Azul más oscuro al pasar el mouse */
+  transform: scale(1.05);
+}
+
+.imagen-esquina {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.imagen-esquina img {
+  width: 100px;
+  height: auto;
+  opacity: 0.85;
+  filter: drop-shadow(0 0 5px rgba(0, 191, 255, 0.3)); 
+  
+}
+.img{
+  border-radius: 50%;
 }
