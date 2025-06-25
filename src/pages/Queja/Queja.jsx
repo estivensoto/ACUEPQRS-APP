@@ -50,5 +50,4 @@ const Queja = () => {
     </div>
   );
 };
-
 export default Queja;
