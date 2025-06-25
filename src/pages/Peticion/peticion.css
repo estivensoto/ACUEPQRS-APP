@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #0a2a44 25%, #3d5d95 100%);
+  background: linear-gradient(to right, #0a2a44 25%, #dbdde0 100%);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -90,4 +90,14 @@ grid-column: span 2;
 margin-right: 50px;
 background-color: rgb(32, 78, 117);
 color: #000;
+}
+
+.iten{
+  text-decoration: none;
+  color: hsl(0, 43%, 99%);
+  background-color: #00a9e0;
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+  padding: 7px;
 }
