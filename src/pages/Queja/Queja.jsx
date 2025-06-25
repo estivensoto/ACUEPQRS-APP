@@ -30,7 +30,7 @@ const Queja = () => {
   return (
     <div>
         <nav style={{ textAlign: 'center', margin: '20px' }}>
-        <Link className='item' to="/">Inicio</Link>
+        <Link className='item' to="/">🏚 Inicio</Link>
       </nav>
     <div className="queja-container">
       <div className="titulo">
