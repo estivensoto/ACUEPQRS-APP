@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import './Producto.css';
 
@@ -9,19 +8,19 @@ function Producto() {
         <h2>MENU</h2>
         <ul>
           <li>
-            <img src="/icons/peticion.png" alt="Petición" />
+            <img src="/icons/3122086.png" alt="Petición" />
             <Link to="/peticion">PETICION</Link>
           </li>
           <li>
-            <img src="/icons/queja.png" alt="Queja" />
+            <img src="/icons/1997401.png" alt="Queja" />
             <Link to="/queja">QUEJA</Link>
           </li>
           <li>
-            <img src="/icons/reclamo.png" alt="Reclamo" />
+            <img src="/icons/628518.png" alt="Reclamo" />
             <Link to="/reclamo">RECLAMO</Link>
           </li>
           <li>
-            <img src="/icons/sugerencia.png" alt="Sugerencia" />
+            <img src="/icons/2593658.png" alt="Sugerencia" />
             <Link to="/sugerencia">SUGERENCIA</Link>
           </li>
         </ul>
@@ -33,7 +32,7 @@ function Producto() {
           Aquí podrás comunicarte directamente con nosotros, hacer seguimiento a tus solicitudes y contribuir a mejorar la calidad del servicio que prestamos a la comunidad.
         </p>
         <div className="logo-acue">
-          <img src="/logo-acuepqrs.png" alt="Logo ACUEpqrs" />
+          <img src="/icons/Imagen1.jpg" alt="Logo ACUEpqrs" />
         </div>
       </main>
     </div>
