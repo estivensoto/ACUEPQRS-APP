@@ -101,3 +101,11 @@ color: #000;
   height: 100px;
   padding: 7px;
 }
+
+.item{
+  text-decoration: none;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: #00a9e0;
+}
