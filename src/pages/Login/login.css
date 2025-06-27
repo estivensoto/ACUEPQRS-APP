@@ -108,3 +108,13 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.imagen-inferior {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 100px; /* Ajustá el tamaño a gusto */
+    height: auto;
+    z-index: 1000;
+    border-radius: 70%;
+}
