@@ -3,10 +3,9 @@ html, body {
   padding: 0;
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #000d1a;
-  color: white;
+  background-color: #0a1a2f; /* Azul marino más suave */
+  color: #f0f8ff; /* Blanco azulado */
 }
-
 
 .producto-container {
   display: flex;
@@ -14,10 +13,9 @@ html, body {
   overflow: hidden;
 }
 
-
 .menu-lateral {
   width: 220px;
-  background: linear-gradient(to bottom, #0d2b4e, #06101f);
+  background: linear-gradient(to bottom, #11436b, #0a1a2f); /* Azul degradado */
   padding: 20px 10px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -32,11 +30,10 @@ html, body {
 }
 
 .menu-lateral h2 {
-  color: white;
+  color: #e0f7ff; /* Azul claro */
   font-size: 20px;
   margin-bottom: 40px;
 }
-
 
 .menu-lateral ul {
   list-style: none;
@@ -62,11 +59,12 @@ html, body {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+  filter: brightness(0) invert(1); /* Hace blanco cualquier ícono negro */
 }
 
 .menu-lateral a {
   text-decoration: none;
-  color: white;
+  color: #d9ecff; /* Blanco azulado */
   font-weight: bold;
   font-size: 14px;
   transition: background 0.3s, color 0.3s;
@@ -75,13 +73,14 @@ html, body {
 }
 
 .menu-lateral a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  color: #00bfff;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #00bfff; /* Azul brillante */
 }
+
 /* Contenido principal */
 .contenido-principal {
-  margin-left: 220px; /* Para que no se superponga con el menú */
-  padding: 300px;
+  margin-left: 220px;
+  padding: 100px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,8 +88,8 @@ html, body {
   width: calc(100% - 220px);
   background-size: cover;
   position: relative;
+  color: #ffffff; /* Texto blanco principal */
 }
-
 
 .logo-acue {
   position: absolute;
@@ -101,4 +100,6 @@ html, body {
 .logo-acue img {
   width: 100px;
   height: auto;
+  border-radius: 50%;
+  border: 2px solid #ffffff33;
 }
