@@ -26,6 +26,7 @@ function Login({ onLogin }) {
             </div>
 
             <form onSubmit={manejarEnvio} className="formulario-login">
+                <img src="/icons/Imagen1.jpg" alt="logo" />
                 <h2>Iniciar Sesión</h2>
                 <div className='inicio'>
                     <input
@@ -54,32 +55,4 @@ function Login({ onLogin }) {
     );
 
 }
-
-const estilos = {
-    formulario: {
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '300px',
-        margin: '100px auto',
-        padding: '20px',
-        border: '2px solid #ccc',
-        borderRadius: '10px',
-        textAlign: 'center',
-    },
-    input: {
-        marginBottom: '10px',
-        padding: '10px',
-        fontSize: '16px',
-    },
-    boton: {
-        padding: '10px',
-        backgroundColor: '#007bff',
-        color: 'white',
-        fontWeight: 'bold',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-    }
-};
-
 export default Login;
