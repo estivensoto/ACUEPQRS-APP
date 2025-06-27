@@ -29,7 +29,7 @@ const Sugerencia = () => {
   return (
     <div>
       <nav style={{ textAlign: 'center', margin: '20px' }}>
-        <Link className="iten" to="/">🏚 Inicio</Link> {' '}
+        <Link className="iten" to="/">🏚 Inicio</Link>{' '}
       </nav>
       <div className="sugerencia-container">
         <div className='titulo'><h1>SUGERENCIAS</h1></div>
