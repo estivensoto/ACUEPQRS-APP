@@ -9,6 +9,7 @@ import Reclamo from './pages/Reclamo/Reclamo.jsx';
 import Sugerencia from './pages/Sugerencias/Sugerencia.jsx';
 import Confirmacion from './pages/Confirmacion/confirmacion.jsx';
 
+
 function App() {
   const [autenticado, setAutenticado] = useState(false);
 
@@ -29,7 +30,7 @@ function App() {
         <Route path="/queja" element={<Queja />} />
         <Route path="/reclamo" element={<Reclamo />} />
         <Route path="/sugerencia" element={<Sugerencia />} />
-        <Route path="/confirmacion" element={<Confirmacion />} /> 
+        <Route path="/confirmacion" element={<Confirmacion />} />
       </Routes>
     </BrowserRouter>
   );
