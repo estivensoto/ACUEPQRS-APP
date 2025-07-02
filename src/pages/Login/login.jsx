@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './login.css';
 
+
 function Login({ onLogin }) {
     const [usuario, setUsuario] = useState('');
     const [clave, setClave] = useState('');
@@ -9,7 +10,7 @@ function Login({ onLogin }) {
     const manejarEnvio = (e) => {
         e.preventDefault();
         if (usuario === 'admin' && clave === '1234') {
-            onLogin(); 
+            onLogin();
         } else {
             setError('Usuario o contraseña incorrectos');
         }
@@ -18,6 +19,7 @@ function Login({ onLogin }) {
     return (
         <div className="contenedor-principal">
             <div className="texto-bienvenida">
+                <img className="imagen-inferior" src='/imagenes/logo.jpg' alt="Decoración" />
                 <h1 className='titulo1'>
                     Bienvenido a nuestro canal oficial de PQRS!<br />
                     Tu opinión es fundamental para mejorar cada día.<br />
@@ -50,36 +52,12 @@ function Login({ onLogin }) {
                     <a href="#">Política de privacidad</a>
                 </div>
             </form>
+
+
+
+
         </div>
     );
-
 }
-
-const estilos = {
-    formulario: {
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '300px',
-        margin: '100px auto',
-        padding: '20px',
-        border: '2px solid #ccc',
-        borderRadius: '10px',
-        textAlign: 'center',
-    },
-    input: {
-        marginBottom: '10px',
-        padding: '10px',
-        fontSize: '16px',
-    },
-    boton: {
-        padding: '10px',
-        backgroundColor: '#007bff',
-        color: 'white',
-        fontWeight: 'bold',
-        border: 'none',
-        borderRadius: '5px',
-        cursor: 'pointer',
-    }
-};
 
 export default Login;
