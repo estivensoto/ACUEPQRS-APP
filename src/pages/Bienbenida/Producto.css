@@ -1,12 +1,12 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'Arial', sans-serif;
-  background-color: #000d1a;
-  color: white;
+  background-color: #0a1a2f;
+  color: #f0f8ff;
 }
-
 
 .producto-container {
   display: flex;
@@ -14,10 +14,9 @@ html, body {
   overflow: hidden;
 }
 
-
 .menu-lateral {
   width: 220px;
-  background: linear-gradient(to bottom, #0d2b4e, #06101f);
+  background: linear-gradient(to bottom, #11436b, #0a1a2f);
   padding: 20px 10px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -32,11 +31,10 @@ html, body {
 }
 
 .menu-lateral h2 {
-  color: white;
+  color: #e0f7ff;
   font-size: 20px;
   margin-bottom: 40px;
 }
-
 
 .menu-lateral ul {
   list-style: none;
@@ -62,11 +60,12 @@ html, body {
   width: 40px;
   height: 40px;
   margin-bottom: 10px;
+  filter: brightness(0) invert(1);
 }
 
 .menu-lateral a {
   text-decoration: none;
-  color: white;
+  color: #d9ecff;
   font-weight: bold;
   font-size: 14px;
   transition: background 0.3s, color 0.3s;
@@ -75,30 +74,118 @@ html, body {
 }
 
 .menu-lateral a:hover {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.2);
   color: #00bfff;
 }
+
 /* Contenido principal */
 .contenido-principal {
-  margin-left: 220px; /* Para que no se superponga con el menú */
-  padding: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  margin-left: 220px;
+  padding: 0 40px;
   width: calc(100% - 220px);
-  background-size: cover;
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Imagen y texto centrados */
+.texto-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+}
+
+.img-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img2 {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
   position: relative;
 }
 
+.texto-img p {
+  flex: 1;
+  font-size: 1.2rem;
+  text-align: justify;
+  line-height: 1.6;
+  max-width: 500px;
+}
 
+/* Logo institucional (si fuera necesario) */
 .logo-acue {
   position: absolute;
   bottom: 20px;
   right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
 .logo-acue img {
   width: 100px;
   height: auto;
+  border-radius: 50%;
+  border: 2px solid #ffffff33;
+}
+
+/* Cierre de sesión alineado horizontal */
+.boton{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.cerrar {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+  position: static;
+}
+
+.cerrar-sesion-btn {
+  margin-top: 30px;
+  padding: 12px 16px;
+  width: 100%;
+  background-color: #22273b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion-btn:hover {
+  background-color: #c9302c;
+}
+
+.menu-imagen {
+  width: 1300px; /* o el tamaño que necesites */
+  height: auto; /* mantiene la proporción */
 }
