@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Producto.css';
-import menu2 from '../../assets/menu2.png';
 
 function Producto({ onLogout }) {
   const handleLogout = () => {
@@ -13,30 +12,28 @@ function Producto({ onLogout }) {
         <h2>MENU</h2>
         <ul>
           <li>
-            <img src={peticion} alt="Petición" />
             <Link to="/peticion">PETICION</Link>
           </li>
           <li>
-            <img src={queja} alt="Queja" />
             <Link to="/queja">QUEJA</Link>
           </li>
           <li>
-            <img src={reclamo} alt="Reclamo" />
             <Link to="/reclamo">RECLAMO</Link>
           </li>
           <li>
-            <img src={sugerencias} alt="Sugerencia" />
             <Link to="/sugerencia">SUGERENCIA</Link>
+          </li>
+          <li>
+            <Link to="/asisten">TU ASISTENTE</Link>
           </li>
         </ul>
         <button
           type="button"
           className="cerrar-sesion-btn"
-          onClick={handleLogout} // o directamente onClick={onLogout} si no usás handleLogout
+          onClick={handleLogout}
         >
           CERRAR SESIÓN
         </button>
-
       </aside>
 
       <main className="contenido-principal">
@@ -48,9 +45,6 @@ function Producto({ onLogout }) {
           Aquí podrás comunicarte directamente con nosotros, hacer seguimiento a tus solicitudes y contribuir a mejorar
           la calidad del servicio que prestamos a la comunidad.
         </p>
-
-        <img src={menu2} alt="menu" className="menu-imagen" />
-
       </main>
     </div>
   );
