@@ -166,3 +166,26 @@ body {
   transition: transform 0.3s ease;
   position: static;
 }
+
+.cerrar-sesion-btn {
+  margin-top: 30px;
+  padding: 12px 16px;
+  width: 100%;
+  background-color: #22273b;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion-btn:hover {
+  background-color: #c9302c;
+}
+
+.menu-imagen {
+  width: 1300px; /* o el tamaño que necesites */
+  height: auto; /* mantiene la proporción */
+}
