@@ -1,10 +1,5 @@
 import { Link } from 'react-router-dom';
 import './Producto.css';
-import peticion from '../../assets/peticion.png';
-import queja from '../../assets/queja.png';
-import reclamo from '../../assets/reclamo.png';
-import sugerencias from '../../assets/sugerencias.png';
-import logo from '../../assets/logo.jpg';
 import menu2 from '../../assets/menu2.png';
 
 function Producto({ onLogout }) {
