@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './peticion.css';
-import PeticionImg from '../../assets/peticiones.png'; // Importar la imagen si es necesario
 
 const Peticion = () => {
     const navigate = useNavigate();
@@ -35,7 +34,6 @@ const Peticion = () => {
             <div className="peticion-container">
                 <div className='titulo'><h1>PETICIONES</h1>
                 <div className='img'>
-                        <img src={PeticionImg} alt="bobada" />
                     </div>
                 </div>
                 
