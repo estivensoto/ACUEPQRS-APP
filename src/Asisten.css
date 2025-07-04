@@ -1,0 +1,60 @@
+.asisten-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+.asisten-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-section,
+.contacto-section {
+  margin-bottom: 2rem;
+}
+
+.faq-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.faq-section li {
+  margin-bottom: 1rem;
+  background: #f1f1f1;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contacto-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.mensaje-exito {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
+}
