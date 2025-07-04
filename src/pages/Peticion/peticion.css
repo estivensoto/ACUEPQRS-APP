@@ -16,6 +16,7 @@ body {
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   padding: 50px;
+  justify-content: flex-end;
 }
 
 .peticion-form {
@@ -79,20 +80,19 @@ body {
 .peticion-form button:hover {
   background-color: #008fc1;
 }
-
 .titulo {
-left: 20px;
-align-items: center;
-text-align: left;
-padding: 20px 50px;
-text-align: left;
-grid-column: span 2;
-margin-right: 50px;
-background-color: rgb(32, 78, 117);
-color: #000;
+  background-color: rgb(32, 78, 117);
+  color: #fff;
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
 }
 
-.iten{
+
+.iten {
   text-decoration: none;
   color: hsl(0, 43%, 99%);
   background-color: #00a9e0;
@@ -101,3 +101,26 @@ color: #000;
   height: 100px;
   padding: 7px;
 }
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  grid-column: span 2;
+  width: 200px;
+  height: 100px;
+  padding: 7px;
+
+}
+
+.img img {
+  max-width: 200%;
+  height: auto;
+  border-radius: 8px; 
+  margin-top: 200px;
+  filter: brightness(0);
+}
+
+
+
