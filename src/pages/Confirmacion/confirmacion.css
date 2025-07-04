@@ -1,30 +1,63 @@
 .confirmacion-container {
-  text-align: center;
-  padding: 50px;
-  background: linear-gradient(to bottom, #2b527f, #b0c4de);
-  height: 100vh;
-  color: white;
+  position: relative;
+  min-height: 100vh;
+  padding: 70px; /* Aumentado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #e0f7ff;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 18px; /* Base más grande */
 }
 
 .mensaje {
-  background-color: #1d4e89;
-  padding: 30px;
-  border-radius: 10px;
-  display: inline-block;
-  margin-top: 30px;
+  background-color: rgba(17, 67, 107, 0.95);
+  padding: 40px; /* Aumentado */
+  border-radius: 16px;
+  max-width: 600px; /* Más ancho */
+  width: 90%;
+  text-align: center;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 20px; /* Texto más grande */
 }
 
 .boton-regresar {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #00aaff;
+  margin-top: 30px;
+  padding: 14px 28px; /* Aumentado */
+  background-color: #00bfff;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   color: white;
   cursor: pointer;
   font-weight: bold;
+  font-size: 16px; /* Aumentado */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .boton-regresar:hover {
-  background-color: #0077aa;
+  background-color: #009acd;
+  transform: scale(1.07); /* Un poco más grande al hacer hover */
+}
+
+.imagen-esquina {
+  position: fixed;
+  bottom: 30px; /* Más separado del borde */
+  right: 30px;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.imagen-esquina img {
+  width: 130px; /* Imagen más grande */
+  height: auto;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 6px rgba(0, 191, 255, 0.4)); 
+}
+
+.img {
+  border-radius: 50%;
 }
