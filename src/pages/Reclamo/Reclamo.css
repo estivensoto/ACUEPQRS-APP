@@ -91,3 +91,10 @@ margin-right: 50px;
 background-color: rgb(32, 78, 117);
 color: #000;
 }
+
+.iten{
+  text-decoration: none;
+  color: rgb(27, 26, 26);
+  padding: 7px;
+  background-color: #00a9e0 ;
+}
