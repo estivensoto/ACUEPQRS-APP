@@ -26,6 +26,9 @@ function Producto({ onLogout }) {
           <li>
             <Link to="/asisten">TU ASISTENTE</Link>
           </li>
+          <li>
+            <Link to="/historial">HISTORIAL</Link>
+          </li>
         </ul>
         <button
           type="button"

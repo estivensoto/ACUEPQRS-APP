@@ -61,3 +61,4 @@ function Login({ onLogin }) {
 }
 
 export default Login;
+// Este componente Login permite a los usuarios iniciar sesión con un usuario y una contraseña.
