@@ -8,7 +8,8 @@ import Queja from './pages/Queja/Queja.jsx';
 import Reclamo from './pages/Reclamo/Reclamo.jsx';
 import Sugerencia from './pages/Sugerencias/Sugerencia.jsx';
 import Confirmacion from './pages/Confirmacion/confirmacion.jsx';
-import Asisten from './Asisten'; // <-- Asegurate que exista el archivo
+import Asisten from './pages/asistencia/Asisten.jsx';
+import Historial from './pages/Historial/Historial.jsx';
 
 function App() {
   const [autenticado, setAutenticado] = useState(false);
@@ -17,27 +18,17 @@ function App() {
     setAutenticado(true);
   };
 
-  const handleLogout = () => {
-    setAutenticado(false);
-  };
-
   return (
     <BrowserRouter>
       <Routes>
-        {!autenticado ? (
-          <Route path="*" element={<Login onLogin={handleLogin} />} />
-        ) : (
-          <>
-            <Route path="/" element={<Producto onLogout={handleLogout} />} />
-            <Route path="/peticion" element={<Peticion />} />
-            <Route path="/queja" element={<Queja />} />
-            <Route path="/reclamo" element={<Reclamo />} />
-            <Route path="/sugerencia" element={<Sugerencia />} />
-            <Route path="/confirmacion" element={<Confirmacion />} />
-            <Route path="/asisten" element={<Asisten />} />
-            <Route path="*" element={<Navigate to="/" />} />
-          </>
-        )}
+        <Route path="/" element={<Producto onLogout={() => setAutenticado(false)} />} />
+        <Route path="/peticion" element={<Peticion />} />
+        <Route path="/queja" element={<Queja />} />
+        <Route path="/reclamo" element={<Reclamo />} />
+        <Route path="/sugerencia" element={<Sugerencia />} />
+        <Route path="/confirmacion" element={<Confirmacion />} />
+        <Route path="/asisten" element={<Asisten />} />
+        <Route path="/historial" element={<Historial />} />
       </Routes>
     </BrowserRouter>
   );

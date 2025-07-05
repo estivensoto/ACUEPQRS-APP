@@ -1,0 +1,29 @@
+.historial-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  border-radius: 10px;
+}
+
+.historial-container h1 {
+  margin-bottom: 20px;
+  color: #0d6efd;
+}
+
+.tabla-historial {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(to bottom, #496ba9, #496dab);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tabla-historial th, .tabla-historial td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-historial th {
+  background-color: #0d6efd;
+  color: white;
+}
