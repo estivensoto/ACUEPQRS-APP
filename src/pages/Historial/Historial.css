@@ -1,8 +1,8 @@
 .historial-container {
   padding: 20px;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-    border-radius: 10px;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  border-radius: 10px;
 }
 
 .historial-container h1 {
@@ -13,9 +13,8 @@
 .tabla-historial {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
+  background: linear-gradient(to bottom, #496ba9, #496dab);
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-radius: 10px;
 }
 
 .tabla-historial th, .tabla-historial td {
@@ -27,7 +26,4 @@
 .tabla-historial th {
   background-color: #0d6efd;
   color: white;
-}
-*{
-    color: black;
 }
