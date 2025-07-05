@@ -8,7 +8,8 @@ import Queja from './pages/Queja/Queja.jsx';
 import Reclamo from './pages/Reclamo/Reclamo.jsx';
 import Sugerencia from './pages/Sugerencias/Sugerencia.jsx';
 import Confirmacion from './pages/Confirmacion/confirmacion.jsx';
-import Asisten from './Asisten'; // <-- Asegurate que exista el archivo
+import Asisten from './Asisten'; 
+import Historial from './pages/Historial/Historial.jsx';
 
 function App() {
   const [autenticado, setAutenticado] = useState(false);
@@ -36,6 +37,7 @@ function App() {
             <Route path="/confirmacion" element={<Confirmacion />} />
             <Route path="/asisten" element={<Asisten />} />
             <Route path="*" element={<Navigate to="/" />} />
+            <Route path="/historial" element={<Historial />} />
           </>
         )}
       </Routes>
