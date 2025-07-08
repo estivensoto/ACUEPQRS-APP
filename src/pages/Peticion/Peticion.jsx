@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './peticion.css';
+import peticionesmenu from '../../assets/peticionesmenu.png'; // Asegúrate de que la ruta sea correcta
 
 const Peticion = () => {
     const navigate = useNavigate();
@@ -30,11 +31,13 @@ const Peticion = () => {
         <div>
             <nav style={{ textAlign: 'center', margin: '20px' }}>
                 <Link className='iten' to="/">🏚 Inicio</Link> {' '}
+                
             </nav>
             <div className="peticion-container">
-                <div className='titulo'><h1>PETICIONES</h1>
+                
+                 <div className='imagen-container'><img className='logo' src={peticionesmenu} alt="" /></div>
                 <div className='img'>
-                    </div>
+                   
                 </div>
                 
                 <form className="peticion-form" onSubmit={handleSubmit}>
