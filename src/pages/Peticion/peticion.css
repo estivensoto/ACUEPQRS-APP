@@ -80,6 +80,7 @@ body {
 .peticion-form button:hover {
   background-color: #008fc1;
 }
+
 .titulo {
   background-color: rgb(32, 78, 117);
   color: #fff;
@@ -89,6 +90,7 @@ body {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
+  color: #fff;
 }
 
 
@@ -102,25 +104,21 @@ body {
   padding: 7px;
 }
 
-.img {
+.logo {
+  width: 100;
+  filter: brightness(0) invert(1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  background-color: rgb(32, 78, 117);
+}
+
+.imagen-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  grid-column: span 2;
-  width: 200px;
-  height: 100px;
-  padding: 7px;
-
+  width: 100%;
 }
-
-.img img {
-  max-width: 200%;
-  height: auto;
-  border-radius: 8px; 
-  margin-top: 200px;
-  filter: brightness(0);
-}
-
-
-

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './reclamo.css';
+import reclamomenu from '../../assets/reclamo.png'; // Adjust the path as necessary
 
 const Reclamo = () => {
   const navigate = useNavigate();
@@ -33,7 +34,9 @@ const Reclamo = () => {
         <Link className="iten" to="/">🏚 Inicio</Link> {' '}
       </nav>
     <div className="reclamo-container">
-      <div className='titulo'><h1>RECLAMOS</h1></div>
+      <div className='titulo'><h1 className='tt'>RECLAMOS</h1>
+      <img className='logo' src={reclamomenu} alt="" />
+      </div>
       <form className="reclamo-form" onSubmit={handleSubmit}>
         <input type="text" name="nombres" placeholder="Nombres" onChange={handleChange} required />
         <input type="text" name="apellidos" placeholder="Apellidos" onChange={handleChange} required />

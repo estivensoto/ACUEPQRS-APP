@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom'; // IMPORTA Link aquí
 import './sugerencia.css';
+import sugerencias from '../../assets/sugerencias.png'; // Ajusta la ruta según tu estructura de carpetas
 
 const Sugerencia = () => {
   const navigate = useNavigate();
@@ -32,7 +33,9 @@ const Sugerencia = () => {
         <Link className="iten" to="/">🏚 Inicio</Link>{' '}
       </nav>
       <div className="sugerencia-container">
-        <div className='titulo'><h1>SUGERENCIAS</h1></div>
+        <div className='titulo'><h1 className='tt'>SUGERENCIAS</h1>
+        <img className='logo' src={sugerencias} alt="" />
+        </div>
         <form className="reclamo-form" onSubmit={handleSubmit}>
           <input type="text" name="nombres" placeholder="Nombres" onChange={handleChange} required />
           <input type="text" name="apellidos" placeholder="Apellidos" onChange={handleChange} required />

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom'; // ✅ Aquí está el Link
 import './queja.css';
+import quejamenu from '../../assets/quejamenu.png'; // Asegúrate de que la ruta sea correcta
 
 const Queja = () => {
   const navigate = useNavigate();
@@ -34,7 +35,8 @@ const Queja = () => {
       </nav>
     <div className="queja-container">
       <div className="titulo">
-        <h1>QUEJAS</h1>
+        <h1 className='tt'>QUEJAS</h1>
+        <img className='logo' src={quejamenu} alt="" />
       </div>
       <form className="queja-form" onSubmit={handleSubmit}>
         <input type="text" name="nombres" placeholder="Nombres" onChange={handleChange} required />
