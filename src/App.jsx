@@ -9,6 +9,7 @@ import Reclamo from './pages/Reclamo/Reclamo.jsx';
 import Sugerencia from './pages/Sugerencias/Sugerencia.jsx';
 import Confirmacion from './pages/Confirmacion/confirmacion.jsx';
 
+
 function App() {
   const [autenticado, setAutenticado] = useState(false);
 

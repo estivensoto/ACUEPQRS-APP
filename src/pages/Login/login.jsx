@@ -44,7 +44,11 @@ function Login({ onLogin }) {
                         onChange={(e) => setClave(e.target.value)}
                         required
                     />
-                    <button type="submit">Iniciar Sesión</button>
+                    <div class="botones">
+                        <button type="submit" class="btn-login">Iniciar Sesión</button>
+                        <button type="submit" class="btn-register">Regístrate</button>
+                    </div>
+
                     {error && <p>{error}</p>}
                 </div>
                 <div className="footer-links">
