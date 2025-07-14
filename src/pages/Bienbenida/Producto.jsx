@@ -6,6 +6,7 @@ import reclamo from '../../assets/reclamo.png'; // Asegúrate de que la ruta sea
 import sugerencias from '../../assets/sugerencias.png'; // Asegúrate de que la ruta sea correcta
 import asistente from '../../assets/asistente.png'; // Asegúrate de que la ruta sea correcta
 import historial from '../../assets/historial.png'; // Asegúrate de que la ruta sea correcta
+import menu2 from '../../assets/menu2.png';
 
 
 function Producto({ onLogout }) {
@@ -61,6 +62,8 @@ function Producto({ onLogout }) {
           Aquí podrás comunicarte directamente con nosotros, hacer seguimiento a tus solicitudes y contribuir a mejorar
           la calidad del servicio que prestamos a la comunidad.
         </p>
+
+      <img src={menu2} alt="" />
       </main>
     </div>
   );
