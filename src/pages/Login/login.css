@@ -118,3 +118,20 @@ p {
     z-index: 1000;
     border-radius: 70%;
 }
+
+.botones {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+.btn-login,
+.btn-register {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2f2b5c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

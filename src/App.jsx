@@ -11,6 +11,7 @@ import Confirmacion from './pages/Confirmacion/confirmacion.jsx';
 import Asisten from './pages/asistencia/Asisten.jsx';
 import Historial from './pages/Historial/Historial.jsx';
 
+
 function App() {
   const [autenticado, setAutenticado] = useState(false);
 
