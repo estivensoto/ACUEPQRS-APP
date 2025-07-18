@@ -13,6 +13,11 @@ const Confirmacion = () => {
         <p>Muchas gracias, nos estaremos comunicando.</p>
         <button className="boton-regresar" onClick={() => navigate('/')}>REGRESAR</button>
       </div>
+
+      {/* Imagen opcional decorativa */}
+      <div className="imagen-esquina">
+        <img src="/imagenes/logo.jpg" alt="Logo decorativo" />
+      </div>
     </div>
   );
 };
