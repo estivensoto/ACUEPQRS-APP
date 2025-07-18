@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Producto.css';
-import peticion from '../../assets/peticion.png'; // Asegúrate de que la ruta sea correcta
-import queja from '../../assets/queja.png'; // Asegúrate de que la ruta sea correcta
-import reclamo from '../../assets/reclamo.png'; // Asegúrate de que la ruta sea correcta
-import sugerencias from '../../assets/sugerencias.png'; // Asegúrate de que la ruta sea correcta
-import asistente from '../../assets/asistente.png'; // Asegúrate de que la ruta sea correcta
-import historial from '../../assets/historial.png'; // Asegúrate de que la ruta sea correcta
+import peticion from '../../assets/peticion.png';
+import queja from '../../assets/queja.png';
+import reclamo from '../../assets/reclamo.png';
+import sugerencias from '../../assets/sugerencias.png';
+import asistente from '../../assets/asistente.png';
+import historial from '../../assets/historial.png';
 import menu2 from '../../assets/menu2.png';
-
 
 function Producto({ onLogout }) {
   const handleLogout = () => {
@@ -54,16 +53,18 @@ function Producto({ onLogout }) {
       </aside>
 
       <main className="contenido-principal">
-        <p>
-          <strong>
-            Esta página está diseñada para facilitar la gestión de Peticiones, Quejas, Reclamos y Sugerencias (PQRS)
-          </strong>{' '}
-          relacionadas con el servicio de acueducto.
-          Aquí podrás comunicarte directamente con nosotros, hacer seguimiento a tus solicitudes y contribuir a mejorar
-          la calidad del servicio que prestamos a la comunidad.
-        </p>
+        <div className="texto-info">
+          <p>
+            <strong>
+              Esta página está diseñada para facilitar la gestión de Peticiones, Quejas, Reclamos y Sugerencias (PQRS)
+            </strong>{' '}
+            relacionadas con el servicio de acueducto.
+            Aquí podrás comunicarte directamente con nosotros, hacer seguimiento a tus solicitudes y contribuir a mejorar
+            la calidad del servicio que prestamos a la comunidad.
+          </p>
+        </div>
 
-      <img src={menu2} alt="" />
+        <img className="logo2" src={menu2} alt="Logo ACUEPqrs" />
       </main>
     </div>
   );
